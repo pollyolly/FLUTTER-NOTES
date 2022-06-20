@@ -17,3 +17,7 @@ Hold Ctrl + Hold Shift + P
 flutter pub add sqflite 
 flutter pub add path
 ```
+### Test SQLite 
+```
+https://www.sqlitetutorial.net/tryit/
+```
