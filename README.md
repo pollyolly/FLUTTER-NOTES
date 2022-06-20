@@ -17,6 +17,15 @@ Hold Ctrl + Hold Shift + P
 flutter pub add sqflite 
 flutter pub add path
 ```
+### Generate Release apk
+```
+flutter build apk --split-per-abi
+
+Location:
+[project]/build/app/outputs/apk/release/app-armeabi-v7a-release.apk
+[project]/build/app/outputs/apk/release/app-arm64-v8a-release.apk
+[project]/build/app/outputs/apk/release/app-x86_64-release.apk
+```
 ### Test SQLite 
 ```
 https://www.sqlitetutorial.net/tryit/
