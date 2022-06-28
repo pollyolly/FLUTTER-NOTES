@@ -57,7 +57,7 @@ buildscript {
 
   }
   dependencies {
-    ...
+  
     // Add this line
     classpath 'com.google.gms:google-services:4.3.12'
 
@@ -65,12 +65,12 @@ buildscript {
 }
 
 allprojects {
-  ...
+  
   repositories {
     // Check that you have the following line (if not, add it):
     google()  // Google's Maven repository
 
-    ...
+  
   }
 }
 ```
