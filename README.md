@@ -30,7 +30,7 @@ Location:
 ```
 https://www.sqlitetutorial.net/tryit/
 ```
-### Generate keystore in Windows
+### Generate keystore for Goole API in Windows
 ```
 https://docs.flutter.dev/deployment/android
 Terminal:
@@ -42,4 +42,32 @@ storePassword=1234demo
 keyPassword=1234demo
 keyAlias=upload
 storeFile=F:\Desktop\dev-flutter-projects\imoney-saver-keystore.jks
+```
+### Generate credentials in Firebase
+google-services.json
+build.gradle
+```
+buildscript {
+  repositories {
+    // Check that you have the following line (if not, add it):
+    google()  // Google's Maven repository
+
+  }
+  dependencies {
+    ...
+    // Add this line
+    classpath 'com.google.gms:google-services:4.3.12'
+
+  }
+}
+
+allprojects {
+  ...
+  repositories {
+    // Check that you have the following line (if not, add it):
+    google()  // Google's Maven repository
+
+    ...
+  }
+}
 ```
