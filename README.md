@@ -78,3 +78,8 @@ allprojects {
 ```
 keytool -keystore path-to-debug-or-production-keystore -list -v
 ```
+### Reinstall All Packages ###
+```
+$flutter clean
+$flutter pub get
+```
