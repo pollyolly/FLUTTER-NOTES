@@ -36,7 +36,7 @@ https://docs.flutter.dev/deployment/android
 Terminal:
 keytool -genkey -v -keystore F:\Desktop\dev-flutter-projects\imoney-saver-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
 ```
-android/key.properties
+IMONEY_SAVER/android/key.properties
 ```
 storePassword=1234demo
 keyPassword=1234demo
