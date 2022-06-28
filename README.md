@@ -71,3 +71,7 @@ allprojects {
   }
 }
 ```
+### Generate SHA1 and SHA2
+```
+keytool -keystore path-to-debug-or-production-keystore -list -v
+```
