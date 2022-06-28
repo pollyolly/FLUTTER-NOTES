@@ -45,6 +45,9 @@ storeFile=F:\Desktop\dev-flutter-projects\imoney-saver-keystore.jks
 ```
 ### Generate credentials in Firebase
 google-services.json
+```
+Copy to project/android/app/google-services.json
+```
 build.gradle
 ```
 buildscript {
