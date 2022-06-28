@@ -32,6 +32,7 @@ https://www.sqlitetutorial.net/tryit/
 ```
 ### Generate keystore in Windows
 ```
+https://docs.flutter.dev/deployment/android
 Terminal:
 keytool -genkey -v -keystore F:\Desktop\dev-flutter-projects\imoney-saver-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
 ```
