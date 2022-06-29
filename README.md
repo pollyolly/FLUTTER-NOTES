@@ -134,7 +134,8 @@ https://stackoverflow.com/questions/58380329/flutter-1-9-d-skia-5106-shader-comp
 ```
 throw PlatformException(code: errorCode, message: errorMessage as String, details: errorDetails, stacktrace: errorStacktrace);
 ```
-//Possible you overlook to set the debug.keystore and released keystore (flutter release build)
-
+//Possible you overlook to set/use the released keystore (SHA1 or SHA256) in Firebase
+//debug keystore is not released keystore 
+//Check app/build.gradle if you are using the released / debug keystore
 https://stackoverflow.com/questions/70230784/throw-platformexceptioncode-errorcode-message-errormessage-as-string-detail
 ```
