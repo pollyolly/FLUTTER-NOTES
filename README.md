@@ -98,6 +98,12 @@ allprojects {
   
   }
 }
+
+//You need to run
+//Note This will remove flutter packages
+flutter clean
+//Reinstall the packages
+flutter pub get
 ```
 project/android/app/build.gradle
 ```
