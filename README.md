@@ -43,6 +43,31 @@ keyPassword=1234demo
 keyAlias=upload
 storeFile=F:\Desktop\dev-flutter-projects\imoney-saver-keystore.jks
 ```
+app/build.gradle
+```
+//Add Before android Block
+def keystoreProperties = new Properties()
+   def keystorePropertiesFile = rootProject.file('key.properties')
+   if (keystorePropertiesFile.exists()) {
+       keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+   }
+
+//Replace builTypes to this
+
+signingConfigs {
+       release {
+           keyAlias keystoreProperties['keyAlias']
+           keyPassword keystoreProperties['keyPassword']
+           storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+           storePassword keystoreProperties['storePassword']
+       }
+   }
+   buildTypes {
+       release {
+           signingConfig signingConfigs.release
+       }
+   }
+```
 ### Generate credentials in Firebase
 google-services.json
 ```
