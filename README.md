@@ -48,7 +48,7 @@ google-services.json
 ```
 Copy to project/android/app/google-services.json
 ```
-build.gradle
+project/android/build.gradle
 ```
 buildscript {
   repositories {
@@ -72,6 +72,15 @@ allprojects {
 
   
   }
+}
+```
+project/android/app/build.gradle
+```
+apply plugin: 'com.google.gms.google-services'
+
+dependencies {
+implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    implementation 'com.google.firebase:firebase-analytics'
 }
 ```
 ### Generate SHA1 and SHA2
