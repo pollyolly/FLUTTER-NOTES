@@ -103,5 +103,5 @@ https://stackoverflow.com/questions/58380329/flutter-1-9-d-skia-5106-shader-comp
 ```
 throw PlatformException(code: errorCode, message: errorMessage as String, details: errorDetails, stacktrace: errorStacktrace);
 ```
-Somewhere in keystore firebase still fixing
+https://stackoverflow.com/questions/70230784/throw-platformexceptioncode-errorcode-message-errormessage-as-string-detail
 ```
