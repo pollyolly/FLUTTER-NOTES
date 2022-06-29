@@ -1,4 +1,19 @@
 # Flutter-Notes
+### Configuration Files
+Android
+```
+app/src/main/AndroidManifest.xml
+app/build.gradle
+app/google-services.json
+app/application-keystore.jks
+android/build.gradle
+android/key.properties
+pubspec.yaml
+```
+IOS
+```
+ios/runner/AppDelegate.swift
+```
 ### Installation
 ```
 https://www.youtube.com/watch?v=tun0HUHaDuE
