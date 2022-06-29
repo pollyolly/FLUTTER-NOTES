@@ -101,3 +101,7 @@ Shader compilation error
 ```
 https://stackoverflow.com/questions/58380329/flutter-1-9-d-skia-5106-shader-compilation-error
 ```
+throw PlatformException(code: errorCode, message: errorMessage as String, details: errorDetails, stacktrace: errorStacktrace);
+```
+Somewhere in keystore firebase still fixing
+```
