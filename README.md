@@ -41,7 +41,9 @@ IMONEY_SAVER/android/key.properties
 storePassword=1234demo
 keyPassword=1234demo
 keyAlias=upload
-storeFile=F:\Desktop\dev-flutter-projects\imoney-saver-keystore.jks
+storeFile=imoney-saver-keystore.jks
+
+//project/app/imoney-saver-keystore.jks
 ```
 app/build.gradle
 ```
