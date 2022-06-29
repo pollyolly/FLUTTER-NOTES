@@ -83,3 +83,8 @@ keytool -keystore path-to-debug-or-production-keystore -list -v
 $flutter clean
 $flutter pub get
 ```
+### Troubleshooting ###
+Some runtime JAR files in the classpath have an incompatible version. Consider removing them from the classpath
+```
+https://flutterhq.com/questions-and-answers/1568/flutter-build-runtime-jar-files-in-the-classpath-should-have-the-same-version-these-files-were-found-in-the-classpath
+```
