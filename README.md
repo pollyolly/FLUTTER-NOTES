@@ -53,8 +53,8 @@ keytool -genkey -v -keystore F:\Desktop\dev-flutter-projects\imoney-saver-keysto
 ```
 IMONEY_SAVER/android/key.properties
 ```
-storePassword=1234demo
-keyPassword=1234demo
+storePassword=
+keyPassword=
 keyAlias=upload
 storeFile=imoney-saver-keystore.jks
 
