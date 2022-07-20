@@ -156,3 +156,8 @@ throw PlatformException(code: errorCode, message: errorMessage as String, detail
 //Check app/build.gradle if you are using the released / debug keystore
 https://stackoverflow.com/questions/70230784/throw-platformexceptioncode-errorcode-message-errormessage-as-string-detail
 ```
+### Helpful Links
+```
+Google Drive Api
+https://www.technicalfeeder.com/2021/12/flutter-file-folder-search-with-google-drive-api/
+```
