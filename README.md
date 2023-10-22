@@ -1,7 +1,7 @@
 # Flutter-Notes
 ### Configuration Files
 Android
-```
+```vim
 app/src/main/AndroidManifest.xml
 app/build.gradle
 app/google-services.json
@@ -11,30 +11,30 @@ android/key.properties
 pubspec.yaml
 ```
 IOS
-```
+```vim
 ios/runner/AppDelegate.swift
 ```
 ### Installation
-```
+```vim
 https://www.youtube.com/watch?v=tun0HUHaDuE
 ```
 ### Commands
-```
-flutter doctor
+```vim
+$flutter doctor
 ```
 ### VS Code
 To create new Flutter app in Vs Code
-```
+```vim
 Hold Ctrl + Hold Shift + P 
 ```
 ### VS Code Terminal Intallation Flutter packages
-```
-flutter pub add sqflite 
-flutter pub add path
+```vim
+$flutter pub add sqflite 
+$flutter pub add path
 ```
 ### Generate Release apk
-```
-flutter build apk --split-per-abi
+```vim
+$flutter build apk --split-per-abi
 
 Location:
 [project]/build/app/outputs/apk/release/app-armeabi-v7a-release.apk
@@ -42,17 +42,17 @@ Location:
 [project]/build/app/outputs/apk/release/app-x86_64-release.apk
 ```
 ### Test SQLite 
-```
+```vim
 https://www.sqlitetutorial.net/tryit/
 ```
 ### Generate keystore for Goole API in Windows
-```
+```vim
 https://docs.flutter.dev/deployment/android
 Terminal:
 keytool -genkey -v -keystore F:\Desktop\dev-flutter-projects\imoney-saver-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
 ```
 IMONEY_SAVER/android/key.properties
-```
+```vim
 storePassword=
 keyPassword=
 keyAlias=upload
@@ -61,7 +61,7 @@ storeFile=imoney-saver-keystore.jks
 //project/app/imoney-saver-keystore.jks
 ```
 app/build.gradle
-```
+```vim
 //Add Before android Block
 def keystoreProperties = new Properties()
    def keystorePropertiesFile = rootProject.file('key.properties')
@@ -93,11 +93,11 @@ flutter pub get
 ```
 ### Generate credentials in Firebase
 google-services.json
-```
+```vim
 Copy to project/android/app/google-services.json
 ```
 project/android/build.gradle
-```
+```vim
 buildscript {
   repositories {
     // Check that you have the following line (if not, add it):
@@ -123,7 +123,7 @@ allprojects {
 }
 ```
 project/android/app/build.gradle
-```
+```vim
 apply plugin: 'com.google.gms.google-services'
 
 dependencies {
@@ -132,32 +132,32 @@ implementation platform('com.google.firebase:firebase-bom:29.0.0')
 }
 ```
 ### Generate SHA1 and SHA2
-```
+```vim
 keytool -keystore path-to-debug-or-production-keystore -list -v
 ```
 ### Reinstall All Packages ###
-```
+```vim
 $flutter clean
 $flutter pub get
 ```
 ### Troubleshooting ###
 Some runtime JAR files in the classpath have an incompatible version. Consider removing them from the classpath
-```
+```vim
 https://flutterhq.com/questions-and-answers/1568/flutter-build-runtime-jar-files-in-the-classpath-should-have-the-same-version-these-files-were-found-in-the-classpath
 ```
 Shader compilation error
-```
+```vim
 https://stackoverflow.com/questions/58380329/flutter-1-9-d-skia-5106-shader-compilation-error
 ```
 throw PlatformException(code: errorCode, message: errorMessage as String, details: errorDetails, stacktrace: errorStacktrace);
-```
+```vim
 //Possible you overlook to set/use the released keystore (SHA1 or SHA256) in Firebase
 //debug keystore is not released keystore 
 //Check app/build.gradle if you are using the released / debug keystore
 https://stackoverflow.com/questions/70230784/throw-platformexceptioncode-errorcode-message-errormessage-as-string-detail
 ```
 ### Helpful Links
-```
+```vim
 Google Drive Api
 https://www.technicalfeeder.com/2021/12/flutter-file-folder-search-with-google-drive-api/
 ```
