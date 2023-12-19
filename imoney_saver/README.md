@@ -16,7 +16,7 @@ Below are the resources used to create this project.
 
 ### Configuration Files
 Android
-<pre>
+```vim
 android/app/src/main/AndroidManifest.xml
 android/app/build.gradle
 android/app/google-services.json
@@ -25,14 +25,14 @@ android/app/proguard-rules.pro //FilePicker
 android/build.gradle
 android/key.properties
 pubspec.yaml
-</pre>
+```
 IOS
-<pre>
+```vim
 ios/runner/AppDelegate.swift
-</pre>
+```
 ## Notification Configuration
 AppDelegate.swift
-<pre>
+```vim
 GeneratedPluginRegistrant.register(with: self)
 
 if #available(iOS 10.0, *) {
@@ -40,11 +40,11 @@ if #available(iOS 10.0, *) {
 }
 
 return super.application(application, didFinishLaunchingWithOptions: launchOptions)
-</pre>
+```
 
 ## Change minSDK to above 18 to support Google API
 F:\Desktop\dev-flutter-projects\imoney_saver\android\app\build.gradle
-<pre>
+```vim
 defaultConfig {
         applicationId "com.example.imoney_saver"
         // minSdkVersion flutter.minSdkVersion
@@ -53,20 +53,20 @@ defaultConfig {
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
-</pre>
+```
 ## FilePicker
-<pre>
+```vim
 F:\Desktop\dev-flutter-projects\imoney_saver\android\app\proguard-rules.pro
 -keep class androidx.lifecycle.DefaultLifecycleObserver
-</pre>
+```
 ## Google Drive Api
 Setup Api
-<pre>
+```vim
 1. Enable google drive Api
 2. Create Firebase App
-</pre>
-AndroidManifest.xml
 ```
+AndroidManifest.xml
+```vim
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.imoney_saver">
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> 
